@@ -95,7 +95,7 @@ and the last letter. So for the string `"Kalamazoo"` it'd output `"K7o"` or `"De
 Can you write code to implement that?
 
 def compress (word)
-  output = word[0] + word.length.to_s + word[-1]
+  output = word[0] + word[1..-2].length.to_s + word[-1]
   puts output
 end
   
